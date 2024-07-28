@@ -5,7 +5,7 @@ export interface Message extends Document{  //interface design maatra gareko typ
     cratedAt:Date
 }
 
-const messageSchema: Schema<Message>=new Schema({  //Message interface ko Schema design gareko
+const messageSchema: Schema<Message>=new Schema({  //Message interface ko Schema design gareko Message type deko
     content:{
         type:String,
         required:true
@@ -17,7 +17,7 @@ const messageSchema: Schema<Message>=new Schema({  //Message interface ko Schema
     }
 })
 
-export interface User extends Document{  //User ko interface design gareko Type script ko lagi
+export interface User extends Document{  //User ko interface design gareko Type script ko lagi 
     username:String,
     email:String,
     password:String,
@@ -28,7 +28,7 @@ export interface User extends Document{  //User ko interface design gareko Type 
     message:Message[]
 }
 
-const userSchema: Schema<User>=new Schema({  //User insterface ko Schema design gareko
+const userSchema: Schema<User>=new Schema({  //User insterface ko Schema design gareko User interface type deko
     username:{
         type:String,
         required:[true, "user name is required"],
